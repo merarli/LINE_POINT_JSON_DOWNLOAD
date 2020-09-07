@@ -1,0 +1,15 @@
+{
+  "name": "LINEポイント",
+  "description": "LINEポイントの獲得、使用履歴を取得する",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": ["https://points.line.me/point_history*"],
+    "js": ["jquery-3.5.1.min.js", "ChEx.js", "content_script.js"]
+  }],
+  "options_page": "options.html",
+  "permissions": [
+    "https://github.com/waterada/chrome-ex-template/*",
+    "storage"
+  ]
+}
